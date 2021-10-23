@@ -36,7 +36,7 @@ export const Initial= ({dni,setDni}) => {
                 {/*nav to transform and trigger event*/}
                 <input type='submit' value='Calcular letra'/>
                 <button><NavLink to = './transform' className='buttonLink'> Ver</NavLink></button>
-                <button><NavLink to = './home' className='buttonLink'>Ir a inicio</NavLink></button>
+                <button><NavLink to = './' className='buttonLink'>Ir a inicio</NavLink></button>
             </form>
         </main>
     )

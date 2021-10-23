@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 import React,{ useState } from 'react';
 import './App.scss';
 import { Initial } from './components/Initial/Initial';
@@ -8,8 +8,10 @@ import { Home } from './components/Home/Home';
 const App = () => {
    const [dni,setDni]= useState('')
   return (
-    <Router>
-      <Route path= '/' >
+      <Router>
+    <Switch>
+      {/*super Important to ad exact, without it the home component is always rendered*/}
+      <Route exact path= '/' >
         <Home />
       </Route>
       <Route  path='/initial'>
@@ -18,7 +20,8 @@ const App = () => {
        <Route  path='/transform'>
         <TrasnformDni dni= {dni} />
       </Route>
-    </Router>
+    </Switch>
+      </Router>
     
   );
 }
