@@ -19,6 +19,8 @@ input
 input[type=submit]{
 background-color: rgb(252, 239, 120);
 cursor: pointer;
+display: block;
+margin: 20px auto 0;
     &:hover{
         background-color:rgb(235, 201, 8);
     }

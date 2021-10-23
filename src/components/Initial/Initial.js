@@ -16,7 +16,7 @@ export const Initial= ({dni,setDni}) => {
      const onHandleSubmit= (event) =>{
          event.preventDefault();
           let dniNumber= event.target.querySelector('input[name="number"]').value;
-         setDni(() => dniNumber);
+          dniNumber !=='' && Number(dniNumber===8) ? setDni(() => dniNumber) : alert('No has introducido un DNI Válido')
          //Reset function
          const reset = () => {
              dniNumber= event.target.querySelector('input[name="number"]').value='';
@@ -34,11 +34,10 @@ export const Initial= ({dni,setDni}) => {
                 </div>
                 <input  type='number' htmlFor='number' name='number' placeholder='EJ: 12644553'/>
                 {/*nav to transform and trigger event*/}
-                <input type='submit' value='Consultar'/>
-                <NavLink to = './transform'> ver</NavLink>
+                <input type='submit' value='Calcular letra'/>
+                <button><NavLink to = './transform' className='buttonLink'> Ver</NavLink></button>
                 <button><NavLink to = './home' className='buttonLink'>Ir a inicio</NavLink></button>
             </form>
-            {dni}
         </main>
     )
 }
