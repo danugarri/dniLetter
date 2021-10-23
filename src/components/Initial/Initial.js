@@ -1,9 +1,10 @@
 
 import './Initial.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
-import { faIdCard } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from "react-router-dom";
+import swal from 'sweetalert';
 
 export const Initial= ({dni,setDni}) => {
 
@@ -16,7 +17,7 @@ export const Initial= ({dni,setDni}) => {
      const onHandleSubmit= (event) =>{
          event.preventDefault();
           let dniNumber= event.target.querySelector('input[name="number"]').value;
-          dniNumber !=='' && dniNumber.length===8 ? setDni(() => dniNumber) : alert('No has introducido un DNI Válido')
+          dniNumber !=='' && dniNumber.length===8 ? setDni(() => dniNumber) : swal('No has introducido un DNI Válido')
          //Reset function
          const reset = () => {
              dniNumber= event.target.querySelector('input[name="number"]').value='';
