@@ -32,10 +32,10 @@ export const Initial= ({dni,setDni}) => {
                 <div>
                 {arrow}
                 </div>
-                <input  type='number' htmlFor='number' name='number'/>
+                <input  type='number' htmlFor='number' name='number' placeholder='EJ: 12644553'/>
                 {/*nav to transform and trigger event*/}
-                 <NavLink to='./transform'><input type='submit' value='Consultar'/></NavLink>
-                
+                <NavLink to = './transform'><input type='submit' value='Consultar'/></NavLink>
+                <button><NavLink to = './home' className='buttonLink'>Ir a inicio</NavLink></button>
             </form>
         </main>
     )

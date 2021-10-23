@@ -1,16 +1,23 @@
-main {
+#hover-effect {
+    
     background-color: khaki;
     width: fit-content;
     padding: 10px;
-    margin: 100px auto 0;
+    margin: 200px auto 0;
     border:2px solid brown;
     border-radius: 5%;
-    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.5)
-    
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.5);
+   cursor: pointer;
+     &:hover{
+        background-color:rgb(235, 201, 8);
+       
+    }
     ;
 }
 h1{
     font-size: 40px;
+    color:black;
+    
 }
 input
 {
@@ -29,12 +36,4 @@ cursor: pointer;
 }
 button{
     margin-top:20px;
-}
-.navlink{
-    margin-top:20px;
-    background-color: rgb(252, 239, 120);
-    cursor: pointer;
-    &:hover{
-        background-color:rgb(235, 201, 8);
-    }
 }
