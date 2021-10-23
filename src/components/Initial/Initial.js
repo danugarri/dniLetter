@@ -34,9 +34,11 @@ export const Initial= ({dni,setDni}) => {
                 </div>
                 <input  type='number' htmlFor='number' name='number' placeholder='EJ: 12644553'/>
                 {/*nav to transform and trigger event*/}
-                <NavLink to = './transform'><input type='submit' value='Consultar'/></NavLink>
+                <input type='submit' value='Consultar'/>
+                <NavLink to = './transform'> ver</NavLink>
                 <button><NavLink to = './home' className='buttonLink'>Ir a inicio</NavLink></button>
             </form>
+            {dni}
         </main>
     )
 }

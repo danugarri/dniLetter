@@ -17,7 +17,7 @@ export const TrasnformDni= ({dni}) => {
             default :
             return <div  id='final'>
                 <h1> La letra de tu DNI es : </h1>
-                    <div id='letter'>{dni+arrayLetters[i]}</div>
+                    <div id='letter'>{dni+arrayLetters[rest]}</div>
                  <button> <NavLink to ='./initial' className='buttonLink'>Volver</NavLink></button>
                  </div>;
         }
