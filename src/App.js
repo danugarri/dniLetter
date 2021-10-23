@@ -9,7 +9,7 @@ const App = () => {
    const [dni,setDni]= useState('')
   return (
     <Router>
-      <Route path= '/home' >
+      <Route path= '/' >
         <Home />
       </Route>
       <Route  path='/initial'>

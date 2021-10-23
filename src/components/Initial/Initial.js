@@ -16,7 +16,7 @@ export const Initial= ({dni,setDni}) => {
      const onHandleSubmit= (event) =>{
          event.preventDefault();
           let dniNumber= event.target.querySelector('input[name="number"]').value;
-          dniNumber !=='' && Number(dniNumber===8) ? setDni(() => dniNumber) : alert('No has introducido un DNI Válido')
+          dniNumber !=='' && dniNumber.length===8 ? setDni(() => dniNumber) : alert('No has introducido un DNI Válido')
          //Reset function
          const reset = () => {
              dniNumber= event.target.querySelector('input[name="number"]').value='';
