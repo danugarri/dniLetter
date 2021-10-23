@@ -1,0 +1,12 @@
+.buttonLink{
+    text-decoration: none;
+    display: block;
+}
+button{
+    margin-top:20px;
+    background-color: rgb(252, 239, 120);
+cursor: pointer;
+    &:hover{
+        background-color:rgb(235, 201, 8);
+    }
+}
