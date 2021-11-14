@@ -13,10 +13,10 @@ export const TrasnformDni= ({dni}) => {
     console.log(rest);
     
 
-    for(let i=1;i<22;i++){
+    for(let i=0;i<=22;i++){
         switch(rest){
             default :
-            if(rest !==0 && dni.length===8 ){
+            if( dni.length===8 ){
             return <div  id='final'>
                 <h1> La letra de tu DNI es : </h1>
                     <div id='letter'>{arrayLetters[rest]}</div>
